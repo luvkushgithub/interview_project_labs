@@ -19,4 +19,6 @@ jobs:
     - name: Local docker image tagging   
       run: docker tag python_docker_image:b7895c4eb456ef26d4ceef39120c02f675d441e5 new-repo:latest
     - name: push dockder image to  dockerhub
-      run: docker push new-repo:latest
+      run: docker push luvkushdocker/test_repo:python_docker_image:b7895c4eb456ef26d4ceef39120c02f675d441e5
+
+
