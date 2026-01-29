@@ -18,7 +18,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: luvkushdocker
-        password: dckr_pat_wz0Eqow_qbDLkTnI3DA97p9XOTk
+        password: UttarPradesh@123
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag luvkushdocker/test_repo:${{github.sha}}
     - name: Local docker image tagging   
