@@ -23,7 +23,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: luvkushgithub
-        password: ${{secrets.DOCKERHUB_TOKEN}}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: push dockder image to  dockerhub
       run: docker push luvkushdocker/test_repo:latest
 
