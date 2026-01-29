@@ -1,6 +1,9 @@
-import time
+import  http.server
+import  socketserver 
 
-while True:
-    print("hello world")
-    # Optional: adds a small delay so the text doesn't flood the console too quickly
-    time.sleep(1)
+PORT = 8000 
+
+Handler = http.server.SimpleHTTPRequestHandler
+with socketserver.TCPServer(("0.0.0.0",PORT)),Handler) as https:
+    print(f"Serving at port {PORT}")
+    httpd.serve_forever()
