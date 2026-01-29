@@ -17,8 +17,8 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag luvkushdocker/test_repo:latest
       # docker build . --file Dockerfile --tag luvkushdocker/test_repo:${{github.sha}}
-    - name: Local docker image tagging   
-      run: docker tag python_docker_image:b7895c4eb456ef26d4ceef39120c02f675d441e5 new-repo:latest
+   # - name: Local docker image tagging   
+   ##   run: docker tag python_docker_image:b7895c4eb456ef26d4ceef39120c02f675d441e5 new-repo:latest
     - name: Login to docker hub
       uses: docker/login-action@v3
       with:
